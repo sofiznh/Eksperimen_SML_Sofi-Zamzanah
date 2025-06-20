@@ -47,10 +47,10 @@ def otomatisasiPreproc(ds, target):
 
     # Membagi data menjadi train dan test
     X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)
-    X_train.to_csv("dataset/X_train.csv", index=False)
-    X_test.to_csv("dataset/X_test.csv", index=False)
-    y_train.to_csv("dataset/y_train.csv", index=False)
-    y_test.to_csv("dataset/y_test.csv", index=False)
+    X_train.to_csv("preprocessing/dataset/X_train.csv", index=False)
+    X_test.to_csv("preprocessing/dataset/X_test.csv", index=False)
+    y_train.to_csv("preprocessing/dataset/y_train.csv", index=False)
+    y_test.to_csv("preprocessing/dataset/y_test.csv", index=False)
 
     # Simpan urutan fitur untuk keperluan inference
     feature_order_path = os.path.join("Encoder Tersimpan", "urutanFitur.pkl")
