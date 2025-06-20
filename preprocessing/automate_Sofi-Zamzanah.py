@@ -60,4 +60,4 @@ def otomatisasiPreproc(ds, target):
     
     return X_train, X_test, y_train, y_test
 
-X_train, X_test, y_train, y_test = otomatisasiPreproc("dataset/data.csv","Personality")
+X_train, X_test, y_train, y_test = otomatisasiPreproc("preprocessing/dataset/data.csv","Personality")
